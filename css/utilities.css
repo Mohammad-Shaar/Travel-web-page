@@ -1,0 +1,95 @@
+/* URL Google Fonts here
+========================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* variables here
+========================================================================= */
+:root {
+    --bg-btns-purple: hsl(249, 63%, 54%);
+    --bg-icon-purple: hsl(249, 95%, 63%);
+    --bg-btns-red: hsl(357, 64%, 53%);
+    --bg-p-red: hsl(357, 94%, 63%);
+    --bg-white: hsl(0, 0%, 100%);
+    --bg-black: hsl(0, 0%, 0%);
+    --bg-main: hsl(0, 100%, 96%);
+}
+
+/* General Sitings
+========================================================================= */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-main);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+p {
+    margin: 0.625em 0;
+}
+
+img {
+    width: 100%;
+}
+
+a,
+h1,
+h2 {
+    text-transform: capitalize;
+}
+
+.btn-p {
+    padding: 0.7em 2em;
+}
+
+.btn-border-r {
+    border-radius: 25px;
+}
+
+/* General Countainer Sitings
+========================================================================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 1em 2.5em;
+}
+
+/* General Flex Sitings
+========================================================================= */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5em;
+    row-gap: 1.5em;
+    height: 100%;
+}
+
+/* General Grid Sitings
+========================================================================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.25em;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* End of General Sitings
+========================================================================= */

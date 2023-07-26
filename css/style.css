@@ -1,0 +1,346 @@
+/* Start header
+========================================================================= */
+header {
+    min-height: 100vh;
+}
+
+header .logo {
+    width: 12.5em;
+}
+
+header nav {
+    background-color: var(--bg-main);
+    /* position: fixed; */
+    width: 100%;
+    z-index: 999;
+}
+
+header nav .flex{
+    justify-content: space-between;
+}
+
+header ul a {
+    color: var(--bg-black);
+}
+
+header nav ul a:hover {
+    border-bottom: 3px solid var(--bg-btns-purple);
+}
+
+header .intro {
+    column-gap: calc(10vw - 5em);
+    margin-top: 3em;
+}
+
+.sign-up {
+    border: none;
+    background-color: var(--bg-btns-purple);
+    color: var(--bg-white);
+}
+
+.sign-up:hover {
+    border: none;
+}
+
+.intro-text {
+    max-width: 520px;;
+}
+
+.intro-text .explor-btn {
+    background-color: hsl(357deg 82.48% 91.91%);
+    color: var(--bg-btns-red);
+    position: relative;
+}
+
+.intro-text .erath {
+    position: relative;
+    top: 12px;
+    display: inline-block;
+    width: 35px;
+}
+
+.intro-text .plan {
+    background-color: var(--bg-btns-red);
+    color: var(--bg-white);
+    margin: 1em 0;
+}
+
+.intro-text .our-story {
+    color: var(--bg-black);
+}
+
+.intro-text h1 {
+    margin: 1.5em 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.intro-text p {
+    margin: 1.5em 0;
+}
+
+.intro-text-bottom {
+    justify-content: flex-start;
+}
+
+.intro-text-bottom .story-image {
+    position: relative;
+    background-image: url(../images/hero-button-img.jpg);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.circle {
+    display: inline-block;
+    position: absolute;
+    width: 2.3em;
+    height: 2.3em;
+    top: 11px;
+    left: 43px;
+    background-color: var(--bg-white);
+    border-radius: 50%;
+}
+
+.circle::after{
+    content: "";
+    position: absolute;
+    z-index: 10;
+    border: 0.35em solid;
+    border-color: var(--bg-black) var(--bg-black) transparent transparent;
+    transform: rotate(45deg);
+    top: 13px;
+    left: 11px;
+}
+
+.intro-text-bottom .watch {
+    flex-wrap: nowrap;
+    column-gap: 2em;
+}
+
+.intro-image {
+    max-width: 450px;
+}
+
+
+/* End header
+========================================================================= */
+
+/* Start services section
+========================================================================= */
+#our-services .flex{
+    min-height: 290px;
+    align-items: flex-start;
+}
+
+#our-services .service {
+    max-width: 250px;
+    padding: 1.5em;
+    border-radius: 25px;
+    position: relative;
+}
+
+#our-services .serv-icon {
+    width: 35px;
+}
+
+.sec-h {
+    color: var(--bg-icon-purple);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
+.serv-one {
+    background-color: hsl(224.31deg 100% 94.18%);
+}
+
+.serv-two {
+    background-color: hsl(34.29deg 100% 91.03%);
+    align-self: flex-end;
+}
+
+.serv-three {
+    background-color: hsl(0deg 100% 92.11%);
+}
+
+.serv-four {
+    background-color: hsl(271.15deg 100% 93.49%);
+    align-self: flex-end;
+}
+
+/* End services section
+========================================================================= */
+
+/* Start destination section
+========================================================================= */
+#destination .sec-h {
+    text-align: center;
+}
+
+.des-p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+#destination .tripe-card {
+    max-width: 350px;
+    position: relative;
+}
+
+.tripe-img {
+    width: 100%;
+}
+
+.des-price {
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    color: var(--bg-icon-purple);
+    padding: 0.5em 1.3em;
+    border-radius: 28px;
+    top: 1em;
+    right: 1em;
+}
+
+.tripe-card img {
+    border-radius: 25px;
+}
+
+.tripe-card h2 {
+    margin: 1em 0;
+}
+.tripe-card address {
+    color: gray;
+}
+
+.tripe-card p {
+    text-transform: capitalize;
+    color: gray;
+}
+
+.rating {
+    display: inline-block;
+    background-color: hsl(34.29deg 100% 91.03%);
+}
+
+.rating .fa-star {
+    color: hsl(60deg 65.55% 53.83%);
+}
+
+#destination .view {
+    display: block;
+    width: fit-content;
+    margin: 1.5em auto;
+    color: var(--bg-white);
+    background-color: var(--bg-btns-purple);
+}
+
+/* End destination section
+========================================================================= */
+
+/* Start Experience section
+========================================================================= */
+#experience .exp{
+    column-gap: calc(10vw - 5em);
+}
+
+#experience .main-exp-img {
+    max-width: 450px;
+}
+
+.exp-img {
+    position: relative;
+}
+
+.exp-img .sub-exp-img {
+    display: inline-block;
+    position: absolute;
+    width: 130px;
+    top: 50%;
+    left: -25px;
+}
+
+@media (max-width: 31.5em){
+    .exp-img .sub-exp-img{
+        width: 5em;
+    }
+}
+
+#experience .exp-text {
+    max-width: 520px;
+}
+
+.exp-text .des-p {
+    text-align: start;
+}
+
+.exp-text .exp-text-inner{
+    justify-content: flex-start;
+    column-gap: 4em;
+}
+
+.exp-text .exp-num {
+    color: var(--bg-btns-purple);
+    font-size: 3em;
+    display: block;
+    font-weight: 700;
+}
+/* End Experience section
+========================================================================= */
+
+/* Start photo gallery section
+========================================================================= */
+#photo-gallery h1 {
+    text-align: center;
+}
+
+#photo-gallery .photo-card img {
+    border-radius: 25px;
+}
+
+#photo-gallery .grid > *:nth-child(n+3) {
+    grid-column: auto;
+}
+
+#photo-gallery .grid > *:nth-child(3) {
+    grid-column: 3 / 5 ;
+    grid-row: 1 /3 ;
+}
+
+#photo-gallery .grid > *:nth-child(n+4) {
+    grid-column: span 2;
+}
+
+@media (max-width: 700px) {
+    #photo-gallery .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #photo-gallery .grid > *:nth-child(2) {
+        grid-row: 3 /5;
+    }
+
+    #photo-gallery .grid > *:nth-child(3) {
+        grid-row: 1;
+    }
+
+    #photo-gallery .grid > *:nth-child(-n+3) {
+        grid-column: 1;
+    }
+
+    #photo-gallery .grid > *:nth-child(n+3){
+        grid-column: 2;
+    }
+
+    #photo-gallery .grid > *:nth-child(4) {
+        grid-column: 1/3;
+    }
+}
+
+/* End photo gallery section
+========================================================================= */
