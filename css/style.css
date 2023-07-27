@@ -216,6 +216,7 @@ header .intro {
 }
 .tripe-card address {
     color: gray;
+    text-transform: capitalize;
 }
 
 .tripe-card p {
@@ -232,7 +233,7 @@ header .intro {
     color: hsl(60deg 65.55% 53.83%);
 }
 
-#destination .view {
+.view {
     display: block;
     width: fit-content;
     margin: 1.5em auto;
@@ -343,4 +344,111 @@ header .intro {
 }
 
 /* End photo gallery section
+========================================================================= */
+
+/* start git started section
+========================================================================= */
+.gs-con-inner {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.gs-img{
+    background-image: url(../images/cta-bg.jpg);
+    background-size: cover;
+}
+
+/* End git started section
+========================================================================= */
+
+/* Start footer section
+========================================================================= */
+footer {
+    padding: 1.5em;
+}
+
+.footer-links {
+    align-items: flex-start;
+}
+
+.footer-links p,
+.footer-links a {
+    color: gray;
+}
+
+.footer-links li {
+    margin: 1em 0;
+}
+
+.foo-links-inner {
+    width: 230px;
+}
+
+.foo-logo {
+    width: 150px;
+    margin: 0.5em 0;
+}
+
+.foo-links-inner .social-links {
+    justify-content: flex-start;
+}
+
+.social-links .fa-brands {
+    color: var(--bg-btns-purple);
+}
+
+.foo-touch {
+    max-width: 230px;
+}
+
+.foo-w-180{
+    width: 180px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1em 0;
+    background-color: var(--bg-main);
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+input {
+    width: 75%;
+    padding: 8px;
+    padding-left: 0.8em;
+    background-color: transparent;
+    border: none;
+    outline: none; /* so that never show border when we click in*/
+}
+
+.feedback-msg {
+    color: var(--bg-white);
+    /* padding: 8px; */
+    background-color: var(--bg-btns-purple);
+    border-radius: 25px;
+    border:  1px solid var(--bg-btns-purple);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.footer-end {
+    text-align: center;
+}
+
+.footer-end p {
+    text-transform: capitalize;
+}
+
+.footer-end .fa-heart{
+    color: var(--bg-btns-purple);
+}
+
+.footer-end .me {
+    color: var(--bg-btns-purple);
+}
+/* End footer section
 ========================================================================= */
