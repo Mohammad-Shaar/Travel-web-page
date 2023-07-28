@@ -29,6 +29,18 @@ body {
     background-color: var(--bg-main);
 }
 
+@media (max-width: 395px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+}
+
 ul {
     list-style: none;
 }
@@ -69,7 +81,13 @@ span {
     max-width: 1200px;
     margin: 0 auto;
     overflow: auto;
-    padding: 1em 2.5em;
+    padding: 1rem 2.5rem;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 0.7rem 1.1rem;
+    }
 }
 
 /* General Flex Sitings

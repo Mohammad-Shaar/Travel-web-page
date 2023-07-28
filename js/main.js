@@ -1,10 +1,13 @@
 // for side bar
+// .clicked class insert to minu-icon span
 function sideMinue() {
     minuIcon.classList.add('clicked');
+    sideMinu.classList.remove('slid-out')
 }
 
 function exiteMinue() {
     minuIcon.classList.remove('clicked');
+    sideMinu.classList.add('slid-out')
 }
 
 const minuIcon = document.querySelector('nav .minu-icon');
