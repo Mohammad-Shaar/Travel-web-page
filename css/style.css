@@ -5,12 +5,12 @@ header {
 }
 
 header .logo {
-    width: 12.5em;
+    max-width: 12.5em;
 }
 
 header nav {
     background-color: var(--bg-main);
-    /* position: fixed; */
+    position: relative;
     width: 100%;
     z-index: 999;
 }
@@ -23,23 +23,66 @@ header ul a {
     color: var(--bg-black);
 }
 
-header nav ul a:hover {
-    border-bottom: 3px solid var(--bg-btns-purple);
-}
-
-header .intro {
-    column-gap: calc(10vw - 5em);
-    margin-top: 3em;
-}
-
 .sign-up {
     border: none;
     background-color: var(--bg-btns-purple);
     color: var(--bg-white);
 }
 
-.sign-up:hover {
+.sign-up:hover,
+.sign-up.active {
     border: none;
+}
+
+header nav ul a:hover {
+    border-bottom: 3px solid var(--bg-btns-purple);
+}
+
+header nav ul a.active {
+    border-bottom: 3px solid var(--bg-btns-purple);
+}
+
+nav  .minu-icon {
+    display: none;
+    color: var(--bg-black);
+}
+
+nav .side-minu {
+    display: none;
+}
+
+@media (max-width: 950px){
+    nav .fa-solid {
+        display: block;
+        cursor: pointer;
+        color: var(--bg-btns-purple);
+    }
+
+    nav .hiden {
+        display: none;
+    }
+
+    nav .minu-icon.clicked ~ .visible {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: min(100%, 400px);
+        height: 100vh;
+        background-color: white;
+        z-index: 10;
+        /* flex-wrap: nowrap; */
+        /* position: absolute; */
+        /* z-index: 15; */
+        /* padding: 0.6em; */
+        /* top: 100%; */
+        /* right: 0; */
+        /* background-color: brown; */
+    }
+}
+
+header .intro {
+    column-gap: calc(10vw - 5em);
+    margin-top: 3em;
 }
 
 .intro-text {
@@ -398,12 +441,17 @@ footer {
     color: var(--bg-btns-purple);
 }
 
+.foo-short {
+    text-transform: uppercase;
+}
+
 .foo-touch {
     max-width: 230px;
 }
 
-.foo-w-180{
+.foo-w-cen {
     width: 180px;
+    text-align: center;
 }
 
 .feedback {

@@ -51,6 +51,10 @@ h2 {
     text-transform: capitalize;
 }
 
+span {
+    display: inline-block;
+}
+
 .btn-p {
     padding: 0.7em 2em;
 }

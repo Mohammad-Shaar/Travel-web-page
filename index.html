@@ -27,18 +27,19 @@
                 <div class="logo">
                     <a href="#"><img src="images/logo.svg" alt="logo image"></a>
                 </div>
-                <ul class="flex">
-                    <li><a href="#">home</a></li>
-                    <li><a href="">about</a></li>
-                    <li><a href="">services</a></li>
-                    <li><a href="">pricing</a></li>
-                    <li><a href="">contact</a></li>
+                <ul class="flex hiden">
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">pricing</a></li>
+                    <li><a href="#">contact</a></li>
                 </ul>
-                <ul class="flex">
-                    <li><a href="">login</a></li>
-                    <li><a class="sign-up btn-p btn-border-r" href="">sign up</a></li>
+                <ul class="flex hiden">
+                    <li><a href="#">login</a></li>
+                    <li><a class="sign-up btn-p btn-border-r" href="#">sign up</a></li>
                 </ul>
-                </div>
+                <span class="minu-icon" onclick="sideMinue()"><i class="fa-solid fa-bars fa-2x"></i></span>
+                <div class="side-minu"></div>
             </div>
         </nav>
         <div class="intro container flex">
@@ -239,7 +240,7 @@
                         <button class="feedback-msg btn-p">send</button>
                     </div>
                 </div>
-                <div class="foo-about foo-w-180">
+                <div class="foo-about foo-w-cen">
                     <h1>about</h1>
                     <ul>
                         <li><a href="">about us</a></li>
@@ -248,16 +249,16 @@
                         <li><a href="">menu</a></li>
                     </ul>
                 </div>
-                <div class="foo-company foo-w-180">
+                <div class="foo-company foo-w-cen">
                     <h1>company</h1>
                     <ul>
                         <li><a href="">why company</a></li>
                         <li><a href="">partner with us</a></li>
-                        <li><a href="">faq</a></li>
+                        <li><a href="" class="foo-short">faq</a></li>
                         <li><a href="">blog</a></li>
                     </ul>
                 </div>
-                <div class="foo-support foo-w-180">
+                <div class="foo-support foo-w-cen">
                     <h1>support</h1>
                     <ul>
                         <li><a href="">account</a></li>
