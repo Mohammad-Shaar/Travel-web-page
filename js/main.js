@@ -1,6 +1,29 @@
+// for side bar
+function sideMinue() {
+    minuIcon.classList.add('clicked');
+}
+
+function exiteMinue() {
+    minuIcon.classList.remove('clicked');
+}
+
+const minuIcon = document.querySelector('nav .minu-icon');
+
+const sideMinu = document.querySelector('.side-minu');
+const sideMinuUlInner = document.querySelector('.side-minu ul');
+
+const navLiItime = document.querySelectorAll('header nav li');
+
+for (let index = 0; index < navLiItime.length; index++) {
+    sideMinuUlInner.appendChild(navLiItime[index].cloneNode(true));
+}
+
+sideMinu.classList.add('visible');
+
 // for nav bar
 const linkSelected = document.querySelector('header nav');
-const linkRemove = document.querySelectorAll('header nav ul a');
+const linkRemove = document.querySelectorAll('header nav ul.hiden a');
+const crazy = document.querySelectorAll('.side-minu ul a');
 
 linkSelected.addEventListener(`click`, function(e){
     if (e.target.tagName === `A`){
@@ -9,26 +32,18 @@ linkSelected.addEventListener(`click`, function(e){
                 linkRemove[index].classList.remove('active');
             }
         }
-        e.target.classList.add(`active`); // toggle: if class not insert he add and vis virsa
+        e.target.classList.add(`active`);
     }
 });
 
-// for side bar
-const minuIcon = document.querySelector('nav .minu-icon');
-
-function sideMinue() {
-    minuIcon.classList.toggle('clicked')
-}
-
-const sideMinu = document.querySelector('.side-minu');
-const sideMinuUlInner = document.createElement('ul');
-
-const navLiItime = document.querySelectorAll('header nav li');
-
-for (let index = 0; index < navLiItime.length; index++) {
-    sideMinuUlInner.appendChild(navLiItime[index].cloneNode(true));
-}
-
-sideMinu.appendChild(sideMinuUlInner);
-
-sideMinu.classList.add('visible');
+linkSelected.addEventListener(`click`, function(e){
+    if (e.target.tagName === `A`){
+        for (let index = 0; index < linkRemove.length; index++) {
+            if (crazy[index].classList.contains('active')){
+                crazy[index].classList.remove('active');
+                minuIcon.classList.remove('clicked');
+            }
+        }
+        e.target.classList.add(`active`);
+    }
+});

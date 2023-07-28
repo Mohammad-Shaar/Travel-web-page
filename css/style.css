@@ -62,21 +62,40 @@ nav .side-minu {
         display: none;
     }
 
+    nav  .minu-icon {
+        display: inline-block;
+    }
+
+    /* .side-minu.exite {
+        display: none;
+        background-color: black;
+    } */
+
     nav .minu-icon.clicked ~ .visible {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: fixed;
-        width: min(100%, 400px);
+        top: 0;
+        right: 0;
+        width: min(100%, 500px);
         height: 100vh;
         background-color: white;
         z-index: 10;
-        /* flex-wrap: nowrap; */
-        /* position: absolute; */
-        /* z-index: 15; */
-        /* padding: 0.6em; */
-        /* top: 100%; */
-        /* right: 0; */
-        /* background-color: brown; */
+    }
+
+    .side-minu ul.flex {
+        padding: 0.7em 2em;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .side-minu .xmark {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1em 2.5em;
     }
 }
 
