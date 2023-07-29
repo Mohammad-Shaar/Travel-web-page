@@ -73,21 +73,24 @@ nav .side-minu {
     /* the .visible class insert to side-minu div */
     nav .minu-icon.clicked ~ .visible {
         display: flex;
+        width: 12.375em;
+        min-height: fit-content;
+        padding: 2em 0;
+        border-radius: 25px;
+        margin: 0.6em;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: fixed;
         top: 0;
         right: 0;
-        width: min(100%, 500px);
-        height: 100vh;
         background-color: white;
         z-index: 10;
         animation: slideInFromRight 0.5s ease-in;
     }
 
     .side-minu ul.flex {
-        padding: 0.7em 2em;
+        padding: 0.7em 0;
         flex-direction: column;
         height: auto;
     }
@@ -141,9 +144,9 @@ header .intro {
 
 .intro-text .erath {
     position: relative;
-    top: 12px;
+    top: 0.75em;
     display: inline-block;
-    width: 35px;
+    width: 2.1875em;
 }
 
 .intro-text .plan {
@@ -156,13 +159,14 @@ header .intro {
     color: var(--bg-black);
 }
 
-.intro-text h1 {
+/* .intro-text h1 {
     margin: 1.5em 0;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: 700;
-}
+} */
 
 .intro-text p {
+    text-align: start;
     margin: 1.5em 0;
 }
 
@@ -174,8 +178,8 @@ header .intro {
     position: relative;
     background-image: url(../images/hero-button-img.jpg);
     background-size: cover;
-    width: 60px;
-    height: 60px;
+    width: 3.75em;
+    height: 3.75em;
     border-radius: 50%;
 }
 
@@ -184,8 +188,8 @@ header .intro {
     position: absolute;
     width: 2.3em;
     height: 2.3em;
-    top: 11px;
-    left: 43px;
+    top: 0.6875em;
+    left: 2.6875em;
     background-color: var(--bg-white);
     border-radius: 50%;
 }
@@ -197,8 +201,8 @@ header .intro {
     border: 0.35em solid;
     border-color: var(--bg-black) var(--bg-black) transparent transparent;
     transform: rotate(45deg);
-    top: 13px;
-    left: 11px;
+    top: 0.8125em;
+    left: 0.6875em;
 }
 
 .intro-text-bottom .watch {
@@ -232,14 +236,6 @@ header .intro {
     width: 35px;
 }
 
-.sec-h {
-    color: var(--bg-icon-purple);
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-bottom: 1em;
-}
-
 .serv-one {
     background-color: hsl(224.31deg 100% 94.18%);
 }
@@ -265,13 +261,6 @@ header .intro {
 ========================================================================= */
 #destination .sec-h {
     text-align: center;
-}
-
-.des-p {
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-transform: capitalize;
 }
 
 #destination .tripe-card {
@@ -348,12 +337,25 @@ header .intro {
 .exp-img .sub-exp-img {
     display: inline-block;
     position: absolute;
-    width: 130px;
+    width: 6em;
     top: 50%;
-    left: -25px;
+    left: 0;
 }
 
-@media (max-width: 31.5em){
+.exp-text .exp-text-inner{
+    justify-content: flex-start;
+    column-gap: 4em;
+}
+
+@media (max-width: 1100px){
+    #experience .exp {
+        flex-direction: column-reverse;
+    }
+
+    .exp-text .sec-h {
+        text-align: center;
+    }
+
     .exp-img .sub-exp-img{
         width: 5em;
     }
@@ -365,11 +367,6 @@ header .intro {
 
 .exp-text .des-p {
     text-align: start;
-}
-
-.exp-text .exp-text-inner{
-    justify-content: flex-start;
-    column-gap: 4em;
 }
 
 .exp-text .exp-num {
@@ -452,11 +449,12 @@ header .intro {
 /* Start footer section
 ========================================================================= */
 footer {
-    padding: 1.5em;
+    padding: 1.5em 1.5em 0;
 }
 
 .footer-links {
     align-items: flex-start;
+    row-gap: 0.5em;
 }
 
 .footer-links p,
@@ -468,17 +466,9 @@ footer {
     margin: 1em 0;
 }
 
-.foo-links-inner {
-    width: 230px;
-}
-
 .foo-logo {
     width: 150px;
-    margin: 0.5em 0;
-}
-
-.foo-links-inner .social-links {
-    justify-content: flex-start;
+    margin: 0.5em auto;
 }
 
 .social-links .fa-brands {
@@ -489,8 +479,10 @@ footer {
     text-transform: uppercase;
 }
 
-.foo-touch {
+.foo-touch,
+.foo-links-inner {
     max-width: 230px;
+    text-align: center;
 }
 
 .foo-w-cen {
