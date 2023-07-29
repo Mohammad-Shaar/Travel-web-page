@@ -97,6 +97,10 @@ span {
     border-radius: 25px;
 }
 
+.bg-lod-lazy {
+    background-color: rgb(205, 205, 205);
+}
+
 /* General Countainer Sitings
 ========================================================================= */
 .container {
