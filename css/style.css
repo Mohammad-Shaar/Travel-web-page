@@ -1,7 +1,7 @@
 /* Start header
 ========================================================================= */
 header {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 header .logo {
@@ -9,10 +9,11 @@ header .logo {
 }
 
 header nav {
+    position: fixed;
     background-color: var(--bg-main);
-    position: relative;
     width: 100%;
     z-index: 999;
+    top:0;
 }
 
 header nav .flex{
@@ -73,15 +74,14 @@ nav .side-minu {
     /* the .visible class insert to side-minu div */
     nav .minu-icon.clicked ~ .visible {
         display: flex;
-        width: 12.375em;
-        min-height: fit-content;
-        padding: 2em 0;
-        border-radius: 25px;
-        margin: 0.6em;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: fixed;
+        width: 12.375em;
+        min-height: fit-content;
+        padding: 2em 0;
+        margin: 0.6em;
         top: 0;
         right: 0;
         background-color: white;
@@ -101,33 +101,26 @@ nav .side-minu {
         right: 0;
         padding: 1rem 2.5rem;
     }
+}
 
-    @media (max-width: 450px) {
-        .side-minu .xmark {
-            padding: 1rem 1.1rem;
-        }
-    }
-
-    @keyframes slideInFromRight {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(0);
-        }        
-    }
-
-    @keyframes slideOutFromRight {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(100%);
-        }        
+@media (max-width: 450px) {
+    .side-minu .xmark {
+        padding: 1rem 1.1rem;
     }
 }
 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }        
+}
+
 header .intro {
+    position: relative;
+    top: 4em;
     column-gap: calc(10vw - 5em);
     margin-top: 3em;
 }
@@ -158,12 +151,6 @@ header .intro {
 .intro-text .our-story {
     color: var(--bg-black);
 }
-
-/* .intro-text h1 {
-    margin: 1.5em 0;
-    font-size: 2.5em;
-    font-weight: 700;
-} */
 
 .intro-text p {
     text-align: start;

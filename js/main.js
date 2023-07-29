@@ -50,3 +50,11 @@ linkSelected.addEventListener(`click`, function(e){
         e.target.classList.add(`active`);
     }
 });
+
+// scrollBtn.addEventListener("click", () => {
+//     window.scrollTo({
+//       top: 100,
+//       left: 0,
+//       behavior: "smooth",
+//     })
+// })

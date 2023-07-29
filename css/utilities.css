@@ -20,6 +20,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
 }
@@ -39,6 +40,12 @@ body {
     body {
         font-size: 12px;
     }
+}
+
+header,
+section,
+footer {
+    margin-top: 3em;
 }
 
 ul {
