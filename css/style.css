@@ -79,6 +79,8 @@ nav .side-minu {
         align-items: center;
         position: fixed;
         width: 12.375em;
+        min-height: -moz-fit-content;    /* Firefox */
+        min-height: -webkit-fit-content; /* Chrome, Safari */
         min-height: fit-content;
         padding: 2em 0;
         margin: 0.6em;
@@ -86,7 +88,7 @@ nav .side-minu {
         right: 0;
         background-color: white;
         z-index: 10;
-        animation: slideInFromRight 0.5s ease-in;
+        animation: slideInFromRight 0.4s ease-in;
     }
 
     .side-minu ul.flex {
@@ -99,13 +101,7 @@ nav .side-minu {
         position: absolute;
         top: 0;
         right: 0;
-        padding: 1rem 2.5rem;
-    }
-}
-
-@media (max-width: 450px) {
-    .side-minu .xmark {
-        padding: 1rem 1.1rem;
+        padding: 1rem 1rem;
     }
 }
 
@@ -150,6 +146,10 @@ header .intro {
 
 .intro-text .our-story {
     color: var(--bg-black);
+}
+
+.intro-text .our-story:hover {
+    color: var(--bg-btns-purple);
 }
 
 .intro-text p {
@@ -297,8 +297,10 @@ header .intro {
 }
 
 .view {
+    width: -moz-fit-content;    /* Firefox */
+    width: -webkit-fit-content; /* Chrome, Safari */
+    width: fit-content;         /* Standard syntax */
     display: block;
-    width: fit-content;
     margin: 1.5em auto;
     color: var(--bg-white);
     background-color: var(--bg-btns-purple);
