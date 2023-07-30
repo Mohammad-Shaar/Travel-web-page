@@ -378,7 +378,7 @@ header .intro {
     border-radius: 25px;
 }
 
-#photo-gallery .grid {
+#photo-gallery .container {
     overflow: hidden;
 }
 
