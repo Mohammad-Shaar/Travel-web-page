@@ -52,24 +52,24 @@ linkSelected.addEventListener(`click`, function(e){
 });
 
 // scroll reveal animation
-const srFromRight = ScrollReveal({
-    origin: 'left',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// const srFromRight = ScrollReveal({
+//     origin: 'left',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-srFromRight.reveal(`.grid > *:nth-child(1), .grid > *:nth-child(2), .grid > *:nth-child(4)`, {
-    interval: 200
-})
+// srFromRight.reveal(`.grid > *:nth-child(1), .grid > *:nth-child(2), .grid > *:nth-child(4)`, {
+//     interval: 200
+// })
 
-const srFromLeft = ScrollReveal({
-    origin: 'right',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
+// const srFromLeft = ScrollReveal({
+//     origin: 'right',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
 
-srFromLeft.reveal(`.grid > *:nth-child(3), .grid > *:nth-child(5), .grid > *:nth-child(6)`, {
-    interval: 200
-});
+// srFromLeft.reveal(`.grid > *:nth-child(3), .grid > *:nth-child(5), .grid > *:nth-child(6)`, {
+//     interval: 200
+// });
