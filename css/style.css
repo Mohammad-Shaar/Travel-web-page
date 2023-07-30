@@ -14,6 +14,7 @@ header nav {
     width: 100%;
     z-index: 999;
     top:0;
+    box-shadow: 0 3px 4px rgba(1, 1, 1, 0.1);
 }
 
 header nav .flex{
@@ -375,6 +376,10 @@ header .intro {
 
 #photo-gallery .photo-card img {
     border-radius: 25px;
+}
+
+#photo-gallery .grid {
+    overflow: hidden;
 }
 
 #photo-gallery .grid > *:nth-child(n+3) {
