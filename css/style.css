@@ -378,10 +378,6 @@ header .intro {
     border-radius: 25px;
 }
 
-#photo-gallery .container {
-    overflow: hidden;
-}
-
 #photo-gallery .grid > *:nth-child(n+3) {
     grid-column: auto;
 }
