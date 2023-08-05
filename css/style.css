@@ -29,11 +29,13 @@ header ul a {
     border: none;
     background-color: var(--bg-btns-purple);
     color: var(--bg-white);
+    transition: 0.3s;
 }
 
 .sign-up:hover,
 .sign-up.active {
     border: none;
+    background-color: var(--bg-hover-purple);
 }
 
 header nav ul a:hover {
@@ -143,6 +145,11 @@ header .intro {
     background-color: var(--bg-btns-red);
     color: var(--bg-white);
     margin: 1em 0;
+    transition: 0.3s;
+}
+
+.intro-text .plan:hover {
+    background-color: var(--bg-hover-red);
 }
 
 .intro-text .our-story {
@@ -305,6 +312,11 @@ header .intro {
     margin: 1.5em auto;
     color: var(--bg-white);
     background-color: var(--bg-btns-purple);
+    transition: 0.3s;
+}
+
+.view:hover {
+    background-color: var(--bg-hover-purple);
 }
 
 /* End destination section
@@ -463,6 +475,11 @@ footer {
 
 .social-links .fa-brands {
     color: var(--bg-btns-purple);
+    transition: 0.3s;
+}
+
+.social-links .fa-brands:hover {
+    color: var(--bg-hover-purple);
 }
 
 .foo-short {
@@ -501,12 +518,16 @@ input {
 
 .feedback-msg {
     color: var(--bg-white);
-    /* padding: 8px; */
     background-color: var(--bg-btns-purple);
     border-radius: 25px;
     border:  1px solid var(--bg-btns-purple);
     text-transform: capitalize;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-msg:hover {
+    background-color: var(--bg-hover-purple);
 }
 
 .footer-end {
